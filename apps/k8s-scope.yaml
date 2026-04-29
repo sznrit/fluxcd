@@ -153,7 +153,7 @@ items:
               args:
                 - "--no-probe"
               env: []
-              image: weaveworks/scope:1.13.2
+              image: harbor.icheer.cn/library/scope:1.13.0
               imagePullPolicy: IfNotPresent
               ports:
                 - containerPort: 4040
@@ -199,7 +199,7 @@ items:
                   valueFrom:
                     fieldRef:
                       fieldPath: spec.nodeName
-              image: weaveworks/scope:1.13.2
+              image: harbor.icheer.cn/library/scope:1.13.0
               imagePullPolicy: IfNotPresent
               resources:
                 requests:
@@ -269,7 +269,7 @@ items:
                 - "weave-scope-app.weave.svc.cluster.local.:80"
               command:
                 - /home/weave/scope
-              image: weaveworks/scope:1.13.2
+              image: harbor.icheer.cn/library/scope:1.13.0
               imagePullPolicy: IfNotPresent
               resources:
                 requests:
