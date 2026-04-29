@@ -25,3 +25,12 @@ flux reconcile kustomization flux-system -n flux-system
 # flux-system（由 bootstrap 自动创建）
 kubectl get kustomization flux-system -n flux-system
 ```
+
+## 删除集群中的 Kustomization 资源
+```bash
+# 删除旧的 Kustomization
+kubectl delete kustomization flux-system -n flux-system
+
+# 删除旧的 GitRepository
+kubectl delete gitrepository flux-system -n flux-system
+```
